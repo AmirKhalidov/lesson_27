@@ -1,5 +1,4 @@
 // TASK 1
-
 const isValidEmail = function (email) {
     return email.length >= 5 &&
         email.includes('@') &&
@@ -12,7 +11,6 @@ const isValidEmail = function (email) {
 // console.log(isValidEmail('me@m'));
 
 // TASK 2
-
 function shortenText(text, maxLength) {
     if (text.length > maxLength) return `${text.slice(0, maxLength)}...`;
 }
@@ -20,7 +18,6 @@ function shortenText(text, maxLength) {
 // console.log(shortenText('Hello my friend', 12));
 
 // TASK 3
-
 const formatName = (name) => {
     const noSpacesLowerName = name.trim().toLowerCase();
     const capitalizedName =
@@ -31,7 +28,6 @@ const formatName = (name) => {
 // formatName('    amir    ');
 
 // TASK 4
-
 const containsWord = (text, word) => {
     return text.toLowerCase().includes(word.toLowerCase()) ? true : false;
 };
@@ -39,7 +35,6 @@ const containsWord = (text, word) => {
 // console.log(containsWord('Horse-knight', 'hors'));
 
 // TASK 5
-
 const analyzeString = function (str) {
     return `Length: ${str.length}, number of whitespaces: ${
         str.match(/\s/g).length
